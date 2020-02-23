@@ -1,0 +1,42 @@
+{
+  "name": "polyglot-cli",
+  "version": "0.0.1",
+  "description": "An example CLI for ordering polyglot's",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts hola",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p .",
+    "test": "npm i -g && polyglot",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "keywords": [
+    "cli",
+    "polyglot",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "Jeroen Ouwehand",
+  "license": "MIT",
+  "bin": {
+    "polyglot": "./lib/index.js"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/clear": "^0.1.0",
+    "@types/figlet": "^1.2.0",
+    "babel-cli": "^6.26.0",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "commander": "^2.19.0",
+    "figlet": "^1.2.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "nodemon": "^1.18.7",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  }
+}
