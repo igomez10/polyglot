@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/node": "^10.12.10",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.1.6"
